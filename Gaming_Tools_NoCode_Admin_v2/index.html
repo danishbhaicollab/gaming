@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gaming Tools — Play • Learn • Win</title>
+<meta name="description" content="Gaming knowledge base for PUBG, COD, gaming tips, realistic names, fashion names and tools.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header class="nav">
+  <a class="brand" href="#"><span class="logo">🎮</span><span><b>Gaming</b> <em>Tools</em><small>Play • Learn • Win</small></span></a>
+  <nav>
+    <a class="active" href="#home">⌂ Home</a><a href="#pubg">🎯 PUBG</a><a href="#cod">◉ COD</a>
+    <a href="#tools">🛠 Tools</a><a href="#tips">💡 Tips</a><a href="#names">✦ Names</a><a href="#exchange">↔ Exchange</a><a href="#blog">▤ Blog</a>
+  </nav>
+  <div class="nav-right"><div class="search"><span>⌕</span><input id="search" placeholder="Search anything..."></div><button class="iconbtn" onclick="toggleTheme()">☼</button><a class="login" href="admin.html">Admin Panel</a></div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <span class="pill">WELCOME TO</span>
+    <h1>Gaming <span>Tools</span></h1>
+    <h2>Your Ultimate Gaming Knowledge Base</h2>
+    <p>Discover PUBG & COD tips, realistic names, fashion names, useful tools, guides and gaming resources — all in one place.</p>
+    <div class="actions"><a class="btn primary" href="#categories">Explore Now →</a><a class="btn outline" href="#blog">▻ Latest Guides</a></div>
+  </div>
+  <div class="hero-visual">
+    <div class="sun"></div><div class="soldier">🎮</div><div class="hero-word">LEVEL<br><b>UP</b></div>
+    <div class="float f1">🎯 PUBG Tips</div><div class="float f2">⚡ Pro Tools</div><div class="float f3">✦ 1,000+ Names</div>
+  </div>
+</section>
+
+<section id="categories" class="section">
+<div class="section-title"><div><small>EXPLORE</small><h2>Popular Categories</h2></div><a href="#blog">View All →</a></div>
+<div class="feature-grid">
+ <article class="feature pubg" id="pubg"><div class="feature-icon">🎯</div><h3>PUBG</h3><p>Tips • Guides • News • Tools</p><button onclick="filterContent('PUBG')">Explore →</button></article>
+ <article class="feature cod" id="cod"><div class="feature-icon">◉</div><h3>COD</h3><p>Tips • Guides • Loadouts • News</p><button onclick="filterContent('COD')">Explore →</button></article>
+ <article class="feature exchange" id="exchange"><div class="feature-icon">🪙</div><h3>Exchange & UC</h3><p>UC • Skins • Items • Info</p><button onclick="filterContent('EXCHANGE')">Explore →</button></article>
+ <article class="feature tools" id="tools"><div class="feature-icon">🛠</div><h3>Gaming Tools</h3><p>Smarter • Faster • Better</p><button onclick="filterContent('TOOLS')">Explore →</button></article>
+</div>
+</section>
+
+<section id="tips" class="section">
+<div class="section-title"><div><small>KNOWLEDGE BASE</small><h2>Must-Read Sections</h2></div><span>Updated regularly</span></div>
+<div class="knowledge-grid" id="knowledgeGrid"></div>
+</section>
+
+<section id="blog" class="section dark">
+<div class="section-title"><div><small>LEARN & IMPROVE</small><h2>Latest Guides & Articles</h2></div><span id="resultCount"></span></div>
+<div class="article-grid" id="articleGrid"></div>
+</section>
+
+<section class="section tools-area">
+<div class="section-title"><div><small>QUICK TOOLS</small><h2>Gaming Utilities</h2></div></div>
+<div class="mini-tools" id="toolsGrid"></div>
+</section>
+</main>
+
+<footer><div class="footer-brand">🎮 <b>Gaming <em>Tools</em></b><small>Play • Learn • Win</small></div><div class="footer-links"><a href="#home">Home</a><a href="#pubg">PUBG</a><a href="#cod">COD</a><a href="#tools">Tools</a><a href="#tips">Tips</a><a href="#names">Names</a><a href="#exchange">Exchange</a><a href="#blog">Blog</a></div><span>© <span id="year"></span> Gaming Tools</span></footer>
+</div>
+
+<div class="modal" id="customModal"><div class="modal-box">
+<button class="x" onclick="closeAdmin()">×</button><small>CUSTOMIZE YOUR WEBSITE</small><h2>Website Customizer</h2>
+<label>Site Name<input id="siteName" value="Gaming Tools"></label>
+<label>Tagline<input id="tagline" value="Play • Learn • Win"></label>
+<label>Primary Color<input id="color" type="color" value="#ffd21a"></label>
+<label>Hero Title<input id="heroTitle" value="Gaming Tools"></label>
+<button class="btn primary wide" onclick="saveSettings()">Save Changes</button>
+<p class="modal-note">आप नाम, tagline और main color बदल सकते हैं। यह starter आपकी settings browser में save करता है।</p>
+</div></div>
+<div class="toast" id="toast"></div>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
