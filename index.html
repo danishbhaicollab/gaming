@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Tools Hub</title>
+  <meta name="description" content="PUBG और gaming tools, guides, tips और information का modern gaming hub.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#home"><span>GT</span> Gaming Tools</a>
+    <nav>
+      <a href="#tools">Tools</a>
+      <a href="#pubg">PUBG</a>
+      <a href="#guides">Guides</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="customize-btn" onclick="openCustomizer()">Customize</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">🎮 GAMING • TOOLS • PUBG</p>
+        <h1>Level Up Your <span>Gaming</span></h1>
+        <p class="hero-text">PUBG की जानकारी, useful gaming tools, guides और tips — सब एक जगह।</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#tools">Explore Tools</a>
+          <a class="btn secondary" href="#pubg">PUBG Info</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="radar"></div>
+        <div class="floating f1">🎯 Sensitivity</div>
+        <div class="floating f2">⚡ FPS Tips</div>
+        <div class="floating f3">🗺️ Maps</div>
+        <div class="hero-badge">PUBG<br><small>RESOURCE HUB</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="tools">
+      <div class="section-head">
+        <div><p class="eyebrow">USEFUL RESOURCES</p><h2>Gaming Tools</h2></div>
+        <p>अपने visitors को useful calculators और gaming resources दें।</p>
+      </div>
+      <div class="grid cards">
+        <article class="card">
+          <div class="icon">🎯</div><h3>Sensitivity Guide</h3>
+          <p>Camera, ADS और gyro sensitivity को समझने के लिए quick guide.</p>
+          <button onclick="showTool('Sensitivity Guide')">Open Tool</button>
+        </article>
+        <article class="card">
+          <div class="icon">📱</div><h3>FPS Optimizer</h3>
+          <p>Device और graphics settings के लिए simple optimization checklist.</p>
+          <button onclick="showTool('FPS Optimizer')">Open Tool</button>
+        </article>
+        <article class="card">
+          <div class="icon">🧮</div><h3>Gaming Calculator</h3>
+          <p>अपनी gaming settings और basic performance numbers track करें.</p>
+          <button onclick="showTool('Gaming Calculator')">Open Tool</button>
+        </article>
+        <article class="card">
+          <div class="icon">📶</div><h3>Ping & Network Tips</h3>
+          <p>High ping को troubleshoot करने के लिए practical checklist.</p>
+          <button onclick="showTool('Network Tips')">Open Tool</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="pubg">
+      <div class="section-head">
+        <div><p class="eyebrow">PLAYERUNKNOWN'S BATTLEGROUNDS</p><h2>PUBG Information</h2></div>
+        <p>यह section आप अपने हिसाब से updates, guides और game information के लिए बढ़ा सकते हैं।</p>
+      </div>
+      <div class="pubg-grid">
+        <div class="pubg-panel">
+          <span class="tag">GUIDE</span>
+          <h3>Beginner's Guide</h3>
+          <p>Landing, loot priority, rotations, positioning और end-zone decisions की basic जानकारी।</p>
+          <ul><li>Safe landing strategy</li><li>Loot priority</li><li>Zone rotation</li><li>Final circle positioning</li></ul>
+        </div>
+        <div class="pubg-panel">
+          <span class="tag">WEAPONS</span>
+          <h3>Weapons & Attachments</h3>
+          <p>AR, SMG, DMR और sniper categories के बारे में अपने articles जोड़ें।</p>
+          <ul><li>Weapon categories</li><li>Attachments</li><li>Recoil tips</li><li>Close vs long range</li></ul>
+        </div>
+        <div class="pubg-panel">
+          <span class="tag">MAPS</span>
+          <h3>Maps & Strategies</h3>
+          <p>हर map के लिए landing spots, rotations और strategic locations की जानकारी रखें।</p>
+          <ul><li>Hot drops</li><li>Safe rotations</li><li>Loot zones</li><li>End-game areas</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="guides">
+      <div class="section-head">
+        <div><p class="eyebrow">LEARN & IMPROVE</p><h2>Latest Guides</h2></div>
+        <p>नीचे दिए cards को बाद में अपने articles और news से replace कर सकते हैं।</p>
+      </div>
+      <div class="grid guides">
+        <article class="guide"><span>01</span><h3>Better Aim कैसे करें?</h3><p>Crosshair placement, tracking और practice routine के basics.</p><a href="#">Read Guide →</a></article>
+        <article class="guide"><span>02</span><h3>Best Graphics Settings</h3><p>Performance और visibility के बीच balance बनाने के तरीके.</p><a href="#">Read Guide →</a></article>
+        <article class="guide"><span>03</span><h3>Rank Push Strategy</h3><p>Survival, positioning और smart fights के लिए practical tips.</p><a href="#">Read Guide →</a></article>
+      </div>
+    </section>
+
+    <section class="cta" id="about">
+      <div><p class="eyebrow">YOUR GAMING BRAND</p><h2>अपनी gaming community बनाइए.</h2><p>नाम, logo, colors और content को Customize button से बदलकर अपनी branding शुरू करें।</p></div>
+      <button class="btn primary" onclick="openCustomizer()">Customize Website</button>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Gaming Tools Hub</strong><p>Independent gaming information website.</p></div>
+    <p>© <span id="year"></span> Gaming Tools Hub</p>
+  </footer>
+
+  <div class="modal" id="customizer">
+    <div class="modal-box">
+      <button class="close" onclick="closeCustomizer()">×</button>
+      <p class="eyebrow">NO-CODE STARTER</p><h2>Customize Your Site</h2>
+      <label>Website Name<input id="siteName" value="Gaming Tools"></label>
+      <label>Hero Heading<input id="heroHeading" value="Level Up Your Gaming"></label>
+      <label>Accent Color<input id="accent" type="color" value="#b6ff00"></label>
+      <div class="modal-actions">
+        <button class="btn secondary" onclick="resetCustom()">Reset</button>
+        <button class="btn primary" onclick="saveCustom()">Save Changes</button>
+      </div>
+      <p class="note">यह starter browser में आपकी customization save करता है। Permanent public changes के लिए बाद में content-management setup जोड़ा जा सकता है।</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
